@@ -1,4 +1,4 @@
-package Experiment2.util;
+package Experiment2.work13.util;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -23,17 +23,17 @@ public class XMLUtil {
             DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = dFactory.newDocumentBuilder();
             Document doc;
-            doc = builder.parse(new File("config.xml"));
+            doc = builder.parse(new File("G:/designerPartten/src/Experiment2/work13/util/config.xml"));
 
             NodeList nl = null;
             Node classNode = null;
             String cName = null;
             nl = doc.getElementsByTagName("className");
 
-            if(args.equals("1")){
+            if(args.equals("analysis")){
                 // 获取第一个属性
                 classNode = nl.item(0).getFirstChild();
-            } else if(args.equals("2")){
+            } else if(args.equals("data")){
                 classNode = nl.item(1).getFirstChild();
             }
 
@@ -46,4 +46,9 @@ public class XMLUtil {
             return null;
         }
     }
+
+//    public static void main(String[] args) {
+//        String path = XMLUtil.class.getResource("").getPath();
+//        System.out.println(path);
+//    }
 }

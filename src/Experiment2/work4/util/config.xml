@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config>
+    <!--RefinedAbstraction-->
+    <className>Experiment2.work4.com.factory.HTTPFactory</className>
+</config>
