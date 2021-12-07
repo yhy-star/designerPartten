@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <!--RefinedAbstraction-->
+<!--    用来存放地图-->
+    <maps>
+        <className>Experiment2.work12.com.impl.maps.MapA</className>
+        <className>Experiment2.work12.com.impl.maps.MapB</className>
+    </maps>
+<!--    用来存放天气-->
+    <weathers>
+        <className>Experiment2.work12.com.impl.weathers.WeatherA</className>
+        <className>Experiment2.work12.com.impl.weathers.WeatherB</className>
+    </weathers>
+<!--    <className>Experiment2.work13.com.components.WholeAnalysis</className>-->
+<!--    &lt;!&ndash;ConcreteImplementor&ndash;&gt;-->
+<!--    <className>Experiment2.work13.com.impl.ExcelData</className>-->
+<!--    用来存放音乐-->
+    <sounds>
+        <className>Experiment2.work12.com.impl.sounds.SoundA</className>
+<!--        <className>Experiment2.work12.com.impl.sounds.SoundB</className>-->
+    </sounds>
+    <scenes>
+        <className>Experiment2.work12.com.scenes.ScenesA</className>
+    </scenes>
+</config>
