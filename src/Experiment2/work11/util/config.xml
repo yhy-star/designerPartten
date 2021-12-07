@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config>
+    <!--RefinedAbstraction-->
+    <className>Experiment2.work11.com.components.Triangle</className>
+    <!--ConcreteImplementor-->
+    <className>Experiment2.work11.com.impl.DimentionalImpl</className>
+</config>
