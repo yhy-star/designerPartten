@@ -1,0 +1,38 @@
+package Experiment3.work3.com.facades;
+
+import Experiment3.work3.com.funs.AddressCopy;
+import Experiment3.work3.com.funs.MessageCopy;
+import Experiment3.work3.com.funs.PictureCopy;
+import Experiment3.work3.com.funs.SoundCopy;
+
+/**
+ * @ClassName： MMCFacade
+ * @Description：
+ * @Author: yhy
+ * @Date： 2021/12/28 9:14
+ **/
+public class MMCFacade extends AbstractFacade{
+
+    private AddressCopy addressCopy;
+    private MessageCopy messageCopy;
+    private PictureCopy pictureCopy;
+    private SoundCopy soundCopy;
+    private String name;
+
+    public MMCFacade() {
+        System.out.println("——————以MMC的方式进行复制——————");
+        this.addressCopy = new AddressCopy();
+        this.messageCopy = new MessageCopy();
+        this.pictureCopy = new PictureCopy();
+        this.soundCopy = new SoundCopy();
+        this.name = "MMC";
+    }
+
+    @Override
+    public void copy() {
+        addressCopy.copy(this.name);
+        messageCopy.copy(this.name);
+        pictureCopy.copy(this.name);
+        soundCopy.copy(this.name);
+    }
+}
