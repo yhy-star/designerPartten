@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config>
+    <!--RefinedAbstraction-->
+    <className>Experiment3.work14.com.adapters.PSOAdapter</className>
+    <className>Experiment3.work14.com.targets.AutoPaperGeneration</className>
+</config>
