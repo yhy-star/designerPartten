@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config>
+    <!--RefinedAbstraction-->
+    <className>Experiment3.work8.com.adps.AnnunciatorAdapter</className>
+    <className>Experiment3.work8.com.adps.CautionLightAdapter</className>
+    <className>Experiment3.work8.com.adps.InsulatedDoorAdapter</className>
+    <className>Experiment3.work8.com.adps.SecurityDoorAdapter</className>
+</config>
