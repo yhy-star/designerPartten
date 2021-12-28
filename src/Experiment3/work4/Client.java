@@ -1,7 +1,9 @@
 package Experiment3.work4;
 
+import Experiment3.work4.com.proxy.AbstractService;
 import Experiment3.work4.com.proxy.BusinessHandler;
 import Experiment3.work4.com.proxy.BusinessService;
+import Experiment3.work4.com.util.XMLUtil;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
@@ -18,10 +20,10 @@ public class Client {
 
         InvocationHandler invocationHandler = null;
 
-        BusinessService service = new BusinessService();
+        AbstractService service = (AbstractService) XMLUtil.getBean();
         invocationHandler = new BusinessHandler(service);
 
-        BusinessService proxy = (BusinessService) Proxy.newProxyInstance(BusinessService.class.getClassLoader(), new Class[]{BusinessService.class}, invocationHandler);
+        AbstractService proxy = (AbstractService) Proxy.newProxyInstance(AbstractService.class.getClassLoader(), new Class[]{AbstractService.class}, invocationHandler);
 
         proxy.method();
     }
